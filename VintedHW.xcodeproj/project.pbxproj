@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E629EE124ACB475006BE5A8 /* UIAlertController+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E629EE024ACB475006BE5A8 /* UIAlertController+Error.swift */; };
+		6E6841442490C68100789E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6841432490C68100789E41 /* AppDelegate.swift */; };
+		6E68414D2490C68200789E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E68414C2490C68200789E41 /* Assets.xcassets */; };
+		6E6841502490C68200789E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E68414E2490C68200789E41 /* LaunchScreen.storyboard */; };
+		6E983ACE2491020500B0EBB9 /* VintedAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E983ACD2491020500B0EBB9 /* VintedAPI.framework */; };
+		6E983ACF2491020500B0EBB9 /* VintedAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E983ACD2491020500B0EBB9 /* VintedAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6EF90E852493BE170007EB1C /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF90E842493BE170007EB1C /* AppRouter.swift */; };
+		87B60E3125768A1F0058974C /* VintedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B60E202576880D0058974C /* VintedUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E6841572490C68200789E41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E6841382490C68100789E41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E68413F2490C68100789E41;
+			remoteInfo = VintedHW;
+		};
+		6E983AD52491021300B0EBB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E983AD12491021300B0EBB9 /* VintedAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E983AC42491015A00B0EBB9;
+			remoteInfo = VintedAPI;
+		};
+		6E983AD72491021B00B0EBB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E983AD12491021300B0EBB9 /* VintedAPI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E983AC32491015A00B0EBB9;
+			remoteInfo = VintedAPI;
+		};
+		87B60E1F2576880D0058974C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87B60E1B2576880D0058974C /* VintedUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 87B60E0F257687810058974C;
+			remoteInfo = VintedUI;
+		};
+		87B60E2F25768A170058974C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87B60E1B2576880D0058974C /* VintedUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 090601D21DB68539001B9CC8;
+			remoteInfo = VintedUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E983AD02491020500B0EBB9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E983ACF2491020500B0EBB9 /* VintedAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6E629EE024ACB475006BE5A8 /* UIAlertController+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Error.swift"; sourceTree = "<group>"; };
+		6E6841402490C68100789E41 /* Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6841432490C68100789E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E68414C2490C68200789E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E68414F2490C68200789E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E6841512490C68200789E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E6841562490C68200789E41 /* VintedHWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VintedHWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E68415C2490C68200789E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E983ACD2491020500B0EBB9 /* VintedAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VintedAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E983AD12491021300B0EBB9 /* VintedAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VintedAPI.xcodeproj; path = VintedAPI/VintedAPI.xcodeproj; sourceTree = SOURCE_ROOT; };
+		6EF90E842493BE170007EB1C /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		87B60E1B2576880D0058974C /* VintedUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VintedUI.xcodeproj; path = VintedUI/VintedUI.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E68413D2490C68100789E41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B60E3125768A1F0058974C /* VintedUI.framework in Frameworks */,
+				6E983ACE2491020500B0EBB9 /* VintedAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E6841532490C68200789E41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E629EDF24ACB429006BE5A8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6E629EE024ACB475006BE5A8 /* UIAlertController+Error.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6E6841372490C68100789E41 = {
+			isa = PBXGroup;
+			children = (
+				87B60E1B2576880D0058974C /* VintedUI.xcodeproj */,
+				6E983AD12491021300B0EBB9 /* VintedAPI.xcodeproj */,
+				6E6841422490C68100789E41 /* VintedHW */,
+				6E6841592490C68200789E41 /* VintedHWTests */,
+				6E6841412490C68100789E41 /* Products */,
+				ED59380908E83F2F83E145CC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6E6841412490C68100789E41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E6841402490C68100789E41 /* Homework.app */,
+				6E6841562490C68200789E41 /* VintedHWTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E6841422490C68100789E41 /* VintedHW */ = {
+			isa = PBXGroup;
+			children = (
+				87B60FD32577D22C0058974C /* ViewControllers */,
+				6E629EDF24ACB429006BE5A8 /* Helpers */,
+				6E983B27249218D900B0EBB9 /* Actions */,
+				6E6841432490C68100789E41 /* AppDelegate.swift */,
+				6E68414C2490C68200789E41 /* Assets.xcassets */,
+				6E68414E2490C68200789E41 /* LaunchScreen.storyboard */,
+				6E6841512490C68200789E41 /* Info.plist */,
+			);
+			path = VintedHW;
+			sourceTree = "<group>";
+		};
+		6E6841592490C68200789E41 /* VintedHWTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E68415C2490C68200789E41 /* Info.plist */,
+			);
+			path = VintedHWTests;
+			sourceTree = "<group>";
+		};
+		6E983AD22491021300B0EBB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E983AD62491021300B0EBB9 /* VintedAPI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E983B27249218D900B0EBB9 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				6EF90E842493BE170007EB1C /* AppRouter.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		87B60E1C2576880D0058974C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87B60E202576880D0058974C /* VintedUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87B60FD32577D22C0058974C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED59380908E83F2F83E145CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E983ACD2491020500B0EBB9 /* VintedAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E68413F2490C68100789E41 /* VintedHW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E68415F2490C68200789E41 /* Build configuration list for PBXNativeTarget "VintedHW" */;
+			buildPhases = (
+				6E68413C2490C68100789E41 /* Sources */,
+				6E68413D2490C68100789E41 /* Frameworks */,
+				6E68413E2490C68100789E41 /* Resources */,
+				6E983AD02491020500B0EBB9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87B60E3025768A170058974C /* PBXTargetDependency */,
+				6E983AD82491021B00B0EBB9 /* PBXTargetDependency */,
+			);
+			name = VintedHW;
+			productName = VintedHW;
+			productReference = 6E6841402490C68100789E41 /* Homework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E6841552490C68200789E41 /* VintedHWTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E6841622490C68200789E41 /* Build configuration list for PBXNativeTarget "VintedHWTests" */;
+			buildPhases = (
+				6E6841522490C68200789E41 /* Sources */,
+				6E6841532490C68200789E41 /* Frameworks */,
+				6E6841542490C68200789E41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E6841582490C68200789E41 /* PBXTargetDependency */,
+			);
+			name = VintedHWTests;
+			productName = VintedHWTests;
+			productReference = 6E6841562490C68200789E41 /* VintedHWTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E6841382490C68100789E41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Vinted;
+				TargetAttributes = {
+					6E68413F2490C68100789E41 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					6E6841552490C68200789E41 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 6E68413F2490C68100789E41;
+					};
+				};
+			};
+			buildConfigurationList = 6E68413B2490C68100789E41 /* Build configuration list for PBXProject "VintedHW" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E6841372490C68100789E41;
+			productRefGroup = 6E6841412490C68100789E41 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6E983AD22491021300B0EBB9 /* Products */;
+					ProjectRef = 6E983AD12491021300B0EBB9 /* VintedAPI.xcodeproj */;
+				},
+				{
+					ProductGroup = 87B60E1C2576880D0058974C /* Products */;
+					ProjectRef = 87B60E1B2576880D0058974C /* VintedUI.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6E68413F2490C68100789E41 /* VintedHW */,
+				6E6841552490C68200789E41 /* VintedHWTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6E983AD62491021300B0EBB9 /* VintedAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VintedAPI.framework;
+			remoteRef = 6E983AD52491021300B0EBB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		87B60E202576880D0058974C /* VintedUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VintedUI.framework;
+			remoteRef = 87B60E1F2576880D0058974C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E68413E2490C68100789E41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6841502490C68200789E41 /* LaunchScreen.storyboard in Resources */,
+				6E68414D2490C68200789E41 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E6841542490C68200789E41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E68413C2490C68100789E41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF90E852493BE170007EB1C /* AppRouter.swift in Sources */,
+				6E6841442490C68100789E41 /* AppDelegate.swift in Sources */,
+				6E629EE124ACB475006BE5A8 /* UIAlertController+Error.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E6841522490C68200789E41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E6841582490C68200789E41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E68413F2490C68100789E41 /* VintedHW */;
+			targetProxy = 6E6841572490C68200789E41 /* PBXContainerItemProxy */;
+		};
+		6E983AD82491021B00B0EBB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VintedAPI;
+			targetProxy = 6E983AD72491021B00B0EBB9 /* PBXContainerItemProxy */;
+		};
+		87B60E3025768A170058974C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VintedUI;
+			targetProxy = 87B60E2F25768A170058974C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E68414E2490C68200789E41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E68414F2490C68200789E41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E68415D2490C68200789E41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E68415E2490C68200789E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E6841602490C68200789E41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = VintedHW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vinted.VintedHW;
+				PRODUCT_NAME = Homework;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E6841612490C68200789E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = VintedHW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vinted.VintedHW;
+				PRODUCT_NAME = Homework;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E6841632490C68200789E41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VintedHWTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vinted.VintedHWTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VintedHW.app/VintedHW";
+			};
+			name = Debug;
+		};
+		6E6841642490C68200789E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VintedHWTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vinted.VintedHWTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VintedHW.app/VintedHW";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E68413B2490C68100789E41 /* Build configuration list for PBXProject "VintedHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E68415D2490C68200789E41 /* Debug */,
+				6E68415E2490C68200789E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E68415F2490C68200789E41 /* Build configuration list for PBXNativeTarget "VintedHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6841602490C68200789E41 /* Debug */,
+				6E6841612490C68200789E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E6841622490C68200789E41 /* Build configuration list for PBXNativeTarget "VintedHWTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6841632490C68200789E41 /* Debug */,
+				6E6841642490C68200789E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E6841382490C68100789E41 /* Project object */;
+}

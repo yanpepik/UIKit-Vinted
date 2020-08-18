@@ -1,0 +1,3 @@
+protocol BadgeViewContent {
+    func removeText()
+}

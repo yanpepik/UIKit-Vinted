@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BadgeAutoLayoutContentView" customModule="VintedUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="204"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZMu-tv-DzL">
+                    <rect key="frame" x="0.0" y="0.0" width="204" height="204"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vn-7t-0Nx" customClass="IconView" customModule="VintedUI" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="90" width="24" height="24"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" placeholder="YES" id="Mga-Fh-q56"/>
+                                <constraint firstAttribute="width" constant="24" placeholder="YES" id="VLJ-jw-cNF"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YY8-Wd-ISf" customClass="TextView" customModule="VintedUI" customModuleProvider="target">
+                            <rect key="frame" x="24" y="0.0" width="180" height="204"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YY8-Wd-ISf" secondAttribute="trailing" id="0Aa-tA-ZeD"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="D5h-zZ-N2S"/>
+                        <constraint firstItem="YY8-Wd-ISf" firstAttribute="leading" secondItem="ZMu-tv-DzL" secondAttribute="leading" constant="24" id="KSF-ID-Qj3"/>
+                        <constraint firstItem="YY8-Wd-ISf" firstAttribute="top" secondItem="ZMu-tv-DzL" secondAttribute="top" id="UN3-fI-jgW"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1vn-7t-0Nx" secondAttribute="bottom" id="Urw-si-qyq"/>
+                        <constraint firstItem="1vn-7t-0Nx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZMu-tv-DzL" secondAttribute="top" id="eJ7-9r-qvS"/>
+                        <constraint firstItem="1vn-7t-0Nx" firstAttribute="leading" secondItem="ZMu-tv-DzL" secondAttribute="leading" id="o3h-b7-qfd"/>
+                        <constraint firstItem="1vn-7t-0Nx" firstAttribute="centerY" secondItem="ZMu-tv-DzL" secondAttribute="centerY" id="poT-pV-Qf0"/>
+                        <constraint firstItem="YY8-Wd-ISf" firstAttribute="leading" secondItem="1vn-7t-0Nx" secondAttribute="trailing" id="swf-N8-nAs"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="tim-mY-lRr"/>
+                        <constraint firstAttribute="bottom" secondItem="YY8-Wd-ISf" secondAttribute="bottom" id="ygW-ga-5lB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ZMu-tv-DzL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DAP-Oe-ouZ"/>
+                <constraint firstAttribute="trailing" secondItem="ZMu-tv-DzL" secondAttribute="trailing" id="DxU-my-QBK"/>
+                <constraint firstAttribute="bottom" secondItem="ZMu-tv-DzL" secondAttribute="bottom" id="jov-Y3-OAD"/>
+                <constraint firstItem="ZMu-tv-DzL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="phI-g0-fEi"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="containerBottomMarginConstraint" destination="jov-Y3-OAD" id="wCR-zE-HSu"/>
+                <outlet property="containerLeftMarginConstraint" destination="phI-g0-fEi" id="klf-zC-tXH"/>
+                <outlet property="containerMinHeightConstraint" destination="tim-mY-lRr" id="Abm-7a-BLD"/>
+                <outlet property="containerMinWidthConstraint" destination="D5h-zZ-N2S" id="hyM-bj-hV0"/>
+                <outlet property="containerRightMarginConstraint" destination="DxU-my-QBK" id="YXs-tV-IXc"/>
+                <outlet property="containerTopMarginConstraint" destination="DAP-Oe-ouZ" id="XI8-xn-OEd"/>
+                <outlet property="iconBottomMarginConstraint" destination="Urw-si-qyq" id="fJF-lS-3g5"/>
+                <outlet property="iconTopMarginConstraint" destination="eJ7-9r-qvS" id="OBy-rH-oo4"/>
+                <outlet property="iconView" destination="1vn-7t-0Nx" id="0ed-gU-0Tc"/>
+                <outlet property="textToIconConstraint" destination="swf-N8-nAs" id="19m-Kn-Dzz"/>
+                <outlet property="textToLeftContainerConstraint" destination="KSF-ID-Qj3" id="O4Q-9Z-J4z"/>
+                <outlet property="textView" destination="YY8-Wd-ISf" id="UBB-lj-uZw"/>
+            </connections>
+            <point key="canvasLocation" x="-352" y="-359"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoaderHUD" customModule="VintedUI" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="Ivu-5O-oZh" id="522-P9-L9A"/>
+                <outlet property="verticalCenteringConstraint" destination="mDH-ph-YaB" id="151-ny-bnC"/>
+                <outlet property="view" destination="f3P-tN-3wc" id="Z4W-ue-SFz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="f3P-tN-3wc">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="Ivu-5O-oZh">
+                    <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ivu-5O-oZh" firstAttribute="centerX" secondItem="f3P-tN-3wc" secondAttribute="centerX" id="Dji-XG-eho"/>
+                <constraint firstAttribute="centerY" secondItem="Ivu-5O-oZh" secondAttribute="centerY" id="mDH-ph-YaB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Hz8-oU-vgJ"/>
+            <point key="canvasLocation" x="-17" y="93"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InputAutoLayoutView" customModule="VintedUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="598" height="313"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpv-k6-2oh">
+                    <rect key="frame" x="0.0" y="0.0" width="299" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kR5-Se-dQr">
+                    <rect key="frame" x="299" y="0.0" width="299" height="313"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="26" translatesAutoresizingMaskIntoConstraints="NO" id="QQY-AC-j8h">
+                            <rect key="frame" x="0.0" y="0.0" width="299" height="26"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" verticalHuggingPriority="750" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="493" placeholderIntrinsicHeight="8" translatesAutoresizingMaskIntoConstraints="NO" id="nNV-Ng-Dcr" customClass="DividerView" customModule="VintedUI" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="30" width="299" height="8"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="orientationInt">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llK-KG-Bqe">
+                            <rect key="frame" x="0.0" y="38" width="299" height="275"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="QQY-AC-j8h" firstAttribute="leading" secondItem="kR5-Se-dQr" secondAttribute="leading" id="1aX-Q3-kyx"/>
+                        <constraint firstAttribute="trailing" secondItem="nNV-Ng-Dcr" secondAttribute="trailing" id="7C2-Di-JOO"/>
+                        <constraint firstAttribute="trailing" secondItem="QQY-AC-j8h" secondAttribute="trailing" id="8mP-zj-DiR"/>
+                        <constraint firstItem="nNV-Ng-Dcr" firstAttribute="leading" secondItem="kR5-Se-dQr" secondAttribute="leading" id="MJm-KV-Z2Q"/>
+                        <constraint firstItem="llK-KG-Bqe" firstAttribute="leading" secondItem="kR5-Se-dQr" secondAttribute="leading" id="NWa-hu-Ode"/>
+                        <constraint firstItem="llK-KG-Bqe" firstAttribute="top" secondItem="nNV-Ng-Dcr" secondAttribute="bottom" id="Qqi-di-wWi"/>
+                        <constraint firstItem="nNV-Ng-Dcr" firstAttribute="top" secondItem="QQY-AC-j8h" secondAttribute="bottom" constant="4" id="UgE-nJ-ELf"/>
+                        <constraint firstItem="QQY-AC-j8h" firstAttribute="top" secondItem="kR5-Se-dQr" secondAttribute="top" id="XmK-80-ZL9"/>
+                        <constraint firstAttribute="trailing" secondItem="llK-KG-Bqe" secondAttribute="trailing" id="igD-NN-fGe"/>
+                        <constraint firstAttribute="bottom" secondItem="llK-KG-Bqe" secondAttribute="bottom" id="mnc-ck-s8S"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kpv-k6-2oh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3CD-Sy-bJt"/>
+                <constraint firstAttribute="trailing" secondItem="kR5-Se-dQr" secondAttribute="trailing" id="DTV-pA-YiR"/>
+                <constraint firstItem="kR5-Se-dQr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="P68-1F-d1X"/>
+                <constraint firstItem="kpv-k6-2oh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QOt-dT-NDa"/>
+                <constraint firstAttribute="trailing" secondItem="kpv-k6-2oh" secondAttribute="trailing" id="RdS-Sl-e0S"/>
+                <constraint firstItem="kR5-Se-dQr" firstAttribute="leading" secondItem="kpv-k6-2oh" secondAttribute="trailing" id="Zjc-xN-vuJ"/>
+                <constraint firstItem="kR5-Se-dQr" firstAttribute="top" secondItem="kpv-k6-2oh" secondAttribute="bottom" id="eTr-3n-wsS"/>
+                <constraint firstItem="kpv-k6-2oh" firstAttribute="width" secondItem="kR5-Se-dQr" secondAttribute="width" id="lOc-Vc-S8i"/>
+                <constraint firstAttribute="bottom" secondItem="kR5-Se-dQr" secondAttribute="bottom" id="t2t-FA-tid"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kpv-k6-2oh" secondAttribute="bottom" id="tXZ-cz-BTN"/>
+                <constraint firstItem="kR5-Se-dQr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wiu-Lt-qdD"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="lOc-Vc-S8i"/>
+                    <exclude reference="tXZ-cz-BTN"/>
+                    <exclude reference="P68-1F-d1X"/>
+                    <exclude reference="Zjc-xN-vuJ"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=regular">
+                <mask key="constraints">
+                    <exclude reference="RdS-Sl-e0S"/>
+                    <include reference="lOc-Vc-S8i"/>
+                    <include reference="tXZ-cz-BTN"/>
+                    <include reference="P68-1F-d1X"/>
+                    <include reference="Zjc-xN-vuJ"/>
+                    <exclude reference="eTr-3n-wsS"/>
+                    <exclude reference="wiu-Lt-qdD"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="dividerTopConstraint" destination="UgE-nJ-ELf" id="6c5-ej-dyd"/>
+                <outlet property="dividerView" destination="nNV-Ng-Dcr" id="jUo-QQ-xSk"/>
+                <outlet property="fieldContainer" destination="QQY-AC-j8h" id="jjc-h7-iMx"/>
+                <outlet property="titleLabel" destination="kpv-k6-2oh" id="pzi-dT-5dF"/>
+                <outlet property="titlePaddingBottomConstraint" destination="eTr-3n-wsS" id="Qpp-78-lxM"/>
+                <outlet property="titleWidthConstraint" destination="lOc-Vc-S8i" id="w1H-FB-cSZ"/>
+                <outlet property="validationContainerView" destination="llK-KG-Bqe" id="Rrm-2T-eiw"/>
+                <outlet property="validationPaddingTopConstraint" destination="Qqi-di-wWi" id="kHM-ph-oao"/>
+            </connections>
+            <point key="canvasLocation" x="-106" y="-87.5"/>
+        </view>
+    </objects>
+</document>
