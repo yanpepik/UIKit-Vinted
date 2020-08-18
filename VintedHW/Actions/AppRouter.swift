@@ -9,7 +9,7 @@ final class AppRouter {
     private init() {}
     
     private var feedViewController: UIViewController {
-        NavigationController(rootViewController: UIViewController())
+        NavigationController(rootViewController: FeedViewController())
     }
     
     func routeToFeed() {
