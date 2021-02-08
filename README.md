@@ -4,9 +4,17 @@ We, engineers at Vinted, are striving to provide the best solutions for business
 
 With that in mind, we have prepared 3 tasks for you.
 
-In the provided repository you will find an open PR (due to technical limitations of Github Classrooms, you should open this PR - from the branch implementation to the main branch - and then review this PR), which is a working Vinted app prototype code left by the previously working developer.
+In the provided repository you will find an open PR (not really, more info below), which is a working Vinted app prototype code left by the previously working developer.
 
-It has two basic screens - an item feed screen where the user is able to scroll and see the items. Clicking one of the items,the user is taken to another screen with item details (with future capability of buying it).
+It has two basic screens - an item feed screen where the user is able to scroll and see the items. Clicking one of the items the user is taken to another screen with item details (with future capability of buying it).
+
+Due to technical limitations of github classrooms you need to perform such git commands after checking out the repo (to refresh git history):
+```
+git checkout origin/feature/feed -b feature/feed
+git rebase -Xtheirs master
+git push -f
+```
+Then open a PR from the branch feature/feed to the main branch.
 
 Let’s imagine that you have arrived at the Vinted office for the first day of work.
 
