@@ -4,9 +4,7 @@ We, engineers at Vinted, are striving to provide the best solutions for business
 
 With that in mind, we have prepared 3 tasks for you.
 
-In the provided repository you will find an open PR (not really, more info below), which is a working Vinted app prototype code left by the previously working developer.
-
-It has two basic screens - an item feed screen where the user is able to scroll and see the items. Clicking one of the items the user is taken to another screen with item details (with future capability of buying it).
+In the provided repository you will find an open PR (not really, more info below), which is a working Vinted app prototype code left by the previously working developer. It has a single screen where the user is able to scroll and see the items. 
 
 Due to technical limitations of github classrooms you need to perform such git commands after checking out the repo (to refresh git history):
 ```
@@ -32,6 +30,9 @@ You might want to get a new API to provide the filtered values, but your backend
  
 Just before you get your third cup of coffee, a stressed analytics guy comes over with some bad news - one of the most vital and precious analytics events (all the events must be tracked) - tracking the shown items in the feed - is not implemented yet!
 
-3. *Track each item the user has seen while scrolling the item feed - just save the events (item id and timestamp of the event recorded) into a file. Whenever the backend endpoint accepting these events is ready we will send all the accumulated events there. Open this as a separate PR to the implementation branch.*
+3. *Track each item the user has seen while scrolling the item feed - upload the details of the event to a POST endpoint “http://mobile-homework-api.vinted.net/impressions”, accepting a list of `ItemSeenEvent(timestamp: Long, item_id: Int)`. For simplicity’s sake, let’s consider the item seen when the item’s image is loaded. Open this as a separate PR to the feature/feed branch.*
 
 After he leaves (chanting “no data - no life” to himself as he walks away), you look around - no one else is coming with some unexpected and/or urgent task (disclaimer - it is highly unlikely for the provided situation to be this chaotic in reality. But chaos is a ladder...). You sit down finally having a chance to write some code.
+
+When you're done, just ping your Vinted contact!
+
