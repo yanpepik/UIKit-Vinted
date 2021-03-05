@@ -30,7 +30,7 @@ You might want to get a new API to provide the filtered values, but your backend
  
 Just before you get your third cup of coffee, a stressed analytics guy comes over with some bad news - one of the most vital and precious analytics events (all the events must be tracked) - tracking the shown items in the feed - is not implemented yet!
 
-3. *Track each item the user has seen while scrolling the item feed - upload the details of the event to a POST endpoint “http://mobile-homework-api.vinted.net/impressions”, accepting a list of `ItemSeenEvent(timestamp: Long, item_id: Int)`. For simplicity’s sake, let’s consider the item seen when the item’s image is loaded. Open this as a separate PR to the feature/feed branch.*
+3. *Track each item the user has seen while scrolling the item feed - upload the details of the event to a POST endpoint http://mobile-homework-api.vinted.net/impressions, accepting a list of `ItemSeenEvent(timestamp: Long, item_id: Int)`. For simplicity’s sake, let’s consider the item seen when the item’s image is loaded. Open this as a separate PR to the feature/feed branch.*
 
 After he leaves (chanting “no data - no life” to himself as he walks away), you look around - no one else is coming with some unexpected and/or urgent task (disclaimer - it is highly unlikely for the provided situation to be this chaotic in reality. But chaos is a ladder...). You sit down finally having a chance to write some code.
 
