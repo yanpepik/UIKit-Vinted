@@ -10,13 +10,13 @@ public class Route<ResultType> {
     let method: Method
     let baseURL: String
     let endpoint: String
-    let params: [String: Any]
+    let params: Encodable?
     let session: URLSession
 
     public init(baseURL: String = Portal.current.apiDomain,
          endpoint: String,
          method: Method = .get,
-         params: [String: Any] = [:],
+         params: Encodable?,
          session: URLSession = .shared) {
         self.method = method
         self.endpoint = endpoint
@@ -33,18 +33,27 @@ public class Route<ResultType> {
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         
+        var httpBody: Data?
+        if let params = params {
+            httpBody = try JSONEncoder.routeParamsEncoder.encode(AnyEncodable(value: params))
+        }
+        
         if case .get = method {
             var urlComponents = URLComponents()
             urlComponents.scheme = url.scheme
             urlComponents.host = url.host
             urlComponents.path = url.path
-            urlComponents.queryItems = params.map { key, value in
-                URLQueryItem(name: key, value: "\(value)")
+            
+            if let httpBody = httpBody, let dictionary = try? JSONSerialization.jsonObject(with: httpBody, options: []) as? [String: Any] {
+                urlComponents.queryItems = dictionary.map { key, value in
+                    URLQueryItem(name: key, value: "\(value)")
+                }
             }
+            
             request.url = urlComponents.url
         } else {
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            request.httpBody = try JSONSerialization.data(withJSONObject: params, options: .init())
+            request.httpBody = httpBody
         }
         
         return request
@@ -79,4 +88,21 @@ extension Route where ResultType: Decodable {
             return nil
         }
     }
+}
+
+private struct AnyEncodable: Encodable {
+    let value: Encodable
+    
+    func encode(to encoder: Encoder) throws {
+        try value.encode(to: encoder)
+    }
+}
+
+extension JSONEncoder {
+    
+    static let routeParamsEncoder: JSONEncoder = {
+        let encoder = JSONEncoder()
+        encoder.keyEncodingStrategy = .convertToSnakeCase
+        return encoder
+    }()
 }
