@@ -20,7 +20,7 @@ extension FeedInteractor: FeedInteractorInput {
     }
     
     func load() {
-        ItemsRoute(page: page).result { [weak self] result in
+        ItemsRoute(params: ItemsRoute.Params(page: page)).result { [weak self] result in
             switch result {
             case .success(let events):
                self?.didLoad(events)
