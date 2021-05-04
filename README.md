@@ -34,5 +34,5 @@ Just before you get your third cup of coffee, a stressed analytics guy comes ove
 
 After he leaves (chanting “no data - no life” to himself as he walks away), you look around - no one else is coming with some unexpected and/or urgent task (disclaimer - it is highly unlikely for the provided situation to be this chaotic in reality. But chaos is a ladder...). You sit down finally having a chance to write some code.
 
-When you're done, just ping your Vinted contact!
+When you're done, just ping your Vinted contact and include Github repository URL you made Pull requests!
 
