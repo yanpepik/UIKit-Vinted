@@ -4,7 +4,8 @@ extension UIAlertController {
     static func alert(_ error: Error) {
         UIApplication
             .shared
-            .keyWindow?
+            .windows
+            .first(where: \.isKeyWindow)?
             .rootViewController?
             .present(
                 UIAlertController(
