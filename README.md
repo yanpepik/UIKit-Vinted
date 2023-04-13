@@ -18,7 +18,7 @@ Let’s imagine that you have arrived at the Vinted office for the first day of 
 
 Since you are a new developer working on these screens, your first task is to understand the code. And as the previous developer did not do a hand-over of the code, you should re-evaluate the existing code.
 
-1. *Please write a PR review of new classes (and anything general you notice with the rest of the code), like you would do for a regular PR. As mentioned above, open a new PR from implementation (`feature/feed`) to the main branch.*
+1. *Please write a PR review of new classes (and anything general you notice with the rest of the code), like you would do for a regular PR. As mentioned above, open a new PR from implementation (`feature/feed`) to the default branch.*
 
 Just before you jump into code you are approached by your new and eager to deliver Product Manager who asks you to implement your first feature - the search of items
 
