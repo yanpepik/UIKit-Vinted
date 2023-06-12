@@ -97,7 +97,8 @@ public final class LoaderHUD: UIViewController {
     // MARK: - Layout handling
 
     private func centerHUD(accountingFor keyboardHeight: CGFloat) {
-        guard let screenHeight = UIApplication.shared.keyWindow?.bounds.height else { return }
+        let window = VintedUI.ConfigurationManager.shared.configuration.windowProvider.window
+        guard let screenHeight = window?.bounds.height else { return }
         let screenCenterYPoint = screenHeight / 2
         let visibleScreenCenterYPoint = (screenHeight - keyboardHeight) / 2
         verticalCenteringConstraint.constant = screenCenterYPoint - visibleScreenCenterYPoint
@@ -138,7 +139,8 @@ public final class LoaderHUD: UIViewController {
 
     @objc
     private func positionView() {
-        view.frame = UIApplication.shared.keyWindow?.bounds ?? .zero
+        let window = VintedUI.ConfigurationManager.shared.configuration.windowProvider.window
+        view.frame = window?.bounds ?? .zero
         view.setNeedsLayout()
         view.layoutIfNeeded()
     }
@@ -184,7 +186,6 @@ public final class LoaderHUD: UIViewController {
 
     private func subscribeToLayoutChangeNotifications() {
         let notifications: [NSNotification.Name] = [
-            UIApplication.didChangeStatusBarOrientationNotification,
             UIApplication.didBecomeActiveNotification,
         ]
         notifications.forEach {
@@ -203,5 +204,10 @@ public final class LoaderHUD: UIViewController {
             inContainerView: containerView,
             margins: UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
         )
+    }
+    
+    public override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        positionView()
     }
 }

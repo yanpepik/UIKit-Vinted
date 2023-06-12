@@ -16,10 +16,10 @@ public extension UIColor {
             hexStringUpper = String(hexStringUpper[index...])
         }
         
-        var rgbValue: UInt32 = 0
+        var rgbValue: UInt64 = 0
         let scanner = Scanner(string: hexStringUpper)
         
-        guard scanner.scanHexInt32(&rgbValue) else {
+        guard scanner.scanHexInt64(&rgbValue) else {
             self.init()
             return nil
         }

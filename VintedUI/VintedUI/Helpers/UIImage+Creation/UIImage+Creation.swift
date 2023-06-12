@@ -18,7 +18,8 @@ extension UIImage {
 
     static func screenshot() -> UIImage? {
         var layer: CALayer?
-        layer = UIApplication.shared.keyWindow?.layer
+        let window = VintedUI.ConfigurationManager.shared.configuration.windowProvider.window
+        layer = window?.layer
         let size = UIScreen.main.bounds.size
         UIGraphicsBeginImageContext(size)
         UIGraphicsGetCurrentContext()?.clip(to: CGRect(x: 0, y: 0, width: size.width, height: size.height))

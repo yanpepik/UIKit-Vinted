@@ -12,7 +12,8 @@ public class ActivityIndicator: NSObject {
 
 extension ActivityIndicator: ViewData {
     public func createView() -> UIView {
-        let view = VintedActivityIndicatorView(style: inversed ? .white : .gray)
+        let view = VintedActivityIndicatorView(style: .medium)
+        view.color = inversed ? Color(.grayscale9) : Color(.grayscale2)
         view.hidesWhenStopped = true
         setupView(view: view)
         return view

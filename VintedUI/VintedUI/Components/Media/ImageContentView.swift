@@ -136,7 +136,7 @@ final class ImageContentView: UIImageView {
     
     func showSpinner() {
         if indicator == nil {
-            let indicatorView = VintedActivityIndicatorView(style: .gray)
+            let indicatorView = VintedActivityIndicatorView(style: .medium)
             indicatorView.hidesWhenStopped = true
             indicatorView.center = CGPoint(x: bounds.midX, y: bounds.midY)
             addSubview(indicatorView)

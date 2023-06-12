@@ -47,6 +47,7 @@ public extension ViewData {
     }
     
     private var traitCollection: UITraitCollection? {
-        UIApplication.shared.keyWindow?.traitCollection
+        let window = VintedUI.ConfigurationManager.shared.configuration.windowProvider.window
+        return window?.traitCollection
     }
 }

@@ -29,7 +29,7 @@ public class FollowingKeyboardHandler: NSObject {
         guard
             let bottomConstraint = bottomConstraint,
             let view = view,
-            let keyWindow = UIApplication.shared.keyWindow,
+            let keyWindow = VintedUI.ConfigurationManager.shared.configuration.windowProvider.window,
             let userInfo = (notification as NSNotification).userInfo,
             let frame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
         else {

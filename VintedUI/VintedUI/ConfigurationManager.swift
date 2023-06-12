@@ -2,6 +2,7 @@ public protocol Configuration {
 
     var linkExtraction: LinkExtractionConfiguration { get }
     var urlHandling: URLHandlingConfiguration { get }
+    var windowProvider: WindowConfiguration { get }
 }
 
 public protocol LinkExtractionConfiguration {
@@ -18,6 +19,8 @@ public protocol URLHandlingConfiguration {
     func userLogin(from query: String) -> URL?
     func handle(_ url: URL)
 }
+
+public protocol WindowConfiguration: KeyWindowProviding {}
 
 public final class ConfigurationManager {
 
@@ -38,6 +41,7 @@ private struct DefaultConfiguration: Configuration {
 
     var linkExtraction: LinkExtractionConfiguration { DefaultLinkExtractionConfiguration() }
     var urlHandling: URLHandlingConfiguration { DefaultURLHandlingConfiguration() }
+    var windowProvider: WindowConfiguration { DefaultWindowConfiguration() }
 }
 
 private struct DefaultLinkExtractionConfiguration: LinkExtractionConfiguration {
@@ -77,5 +81,15 @@ private struct DefaultURLHandlingConfiguration: URLHandlingConfiguration {
 
     func handle(_ url: URL) {
         assertionFailure("Framework `VintedUI` is not configured!")
+    }
+}
+
+private struct DefaultWindowConfiguration: WindowConfiguration {
+    var window: UIWindow? {
+        nil
+    }
+
+    var safeAreaInsets: UIEdgeInsets {
+        .zero
     }
 }
