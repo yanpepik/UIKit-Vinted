@@ -98,7 +98,10 @@ final class FeedViewController: ViewController {
     private func createItemCell(item: Feed.FeedViewModelResult.FeedItemViewModel) -> Cell {
         FeedUIBuilder.itemBox(
             item: item,
-            onImageLoad: {},
+            onImageLoad: { [weak self] in
+                let request = Feed.Analytics.Request(id: item.id)
+                self?.interactor.sendAnalytics(request: request)
+            },
             onTap: {}
         )
     }

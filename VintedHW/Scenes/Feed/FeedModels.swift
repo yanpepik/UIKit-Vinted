@@ -38,6 +38,12 @@ enum Feed {
             let feedResult: FeedViewModelResult
         }
     }
+
+    enum Analytics {
+        struct Request {
+            let id: Int
+        }
+    }
 }
 
 extension Feed {

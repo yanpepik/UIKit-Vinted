@@ -5,6 +5,7 @@ protocol FeedBusinessLogic: AnyObject {
     func fetchInitialData(request: Feed.InitialData.Request)
     func fetchReloadedData(request: Feed.ReloadedData.Request)
     func fetchFilteredData(request: Feed.FilteredData.Request)
+    func sendAnalytics(request: Feed.Analytics.Request)
 }
 
 final class FeedInteractor {
@@ -43,6 +44,14 @@ extension FeedInteractor: FeedBusinessLogic {
         currentKeywoard = request.keywoard
         requestItems(keywoard: request.keywoard) { [weak self] result in
             self?.presenter.presentFilteredData(response: Feed.FilteredData.Response(feedResult: result))
+        }
+    }
+
+    func sendAnalytics(request: Feed.Analytics.Request) {
+        let timestamp = Int(Date().timeIntervalSince1970)
+        let params = AnalyticsRoute.Params(items: [AnalyticsRoute.Params.Item(id: request.id, timestamp: timestamp)])
+        AnalyticsRoute(params: params).result { result in
+            print(result)
         }
     }
 
