@@ -2,12 +2,13 @@ import VintedUI
 import VintedAPI
 
 final class FeedUIBuilder {
-    
-    static func itemBox(item: Item,
-                        onImageLoad: @escaping () -> (),
-                        onTap: @escaping () -> ()) -> Cell {
+    static func itemBox(
+        item: Feed.FeedViewModelResult.FeedItemViewModel,
+        onImageLoad: @escaping () -> (),
+        onTap: @escaping () -> ()
+    ) -> Cell {
         let image = Image(
-            imageToLoad: .init(url: item.image),
+            imageToLoad: .init(url: item.imageURL),
             size: .init(
                 widthSize: .percentage,
                 width: 100,
@@ -25,7 +26,7 @@ final class FeedUIBuilder {
             onImageLoad: onImageLoad
         )
         
-        let price = AttributedText(text: "\(item.price) €", type: .title)
+        let price = AttributedText(text: item.priceText, type: .title)
         let category = AttributedText(text: item.category, type: .subtitle, numberOfRows: 1)
         let brand = AttributedText(text: item.brand, type: .subtitle, numberOfRows: 1)
         let stack = Stack(items: [image, [price, category, brand].stacked()], spacing: .regular)
@@ -35,7 +36,7 @@ final class FeedUIBuilder {
     }
     
     static func noResult() -> Cell {
-        AttributedText(text: __("no_result"))
+        AttributedText(text: "No Result")
             .aligned(horizontal: .center, vertically: .center)
             .inCell()
     }

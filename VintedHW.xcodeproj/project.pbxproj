@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E629EE124ACB475006BE5A8 /* UIAlertController+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E629EE024ACB475006BE5A8 /* UIAlertController+Error.swift */; };
 		6E6841442490C68100789E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6841432490C68100789E41 /* AppDelegate.swift */; };
 		6E68414D2490C68200789E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E68414C2490C68200789E41 /* Assets.xcassets */; };
 		6E6841502490C68200789E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E68414E2490C68200789E41 /* LaunchScreen.storyboard */; };
@@ -17,9 +16,10 @@
 		87B60E3125768A1F0058974C /* VintedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B60E202576880D0058974C /* VintedUI.framework */; };
 		87B60FEE2577D3790058974C /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B60FE92577D3790058974C /* FeedPresenter.swift */; };
 		87B60FEF2577D3790058974C /* FeedUIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B60FEA2577D3790058974C /* FeedUIBuilder.swift */; };
-		87B60FF02577D3790058974C /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87B60FEB2577D3790058974C /* FeedViewController.xib */; };
 		87B60FF12577D3790058974C /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B60FEC2577D3790058974C /* FeedInteractor.swift */; };
 		87B60FF22577D3790058974C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B60FED2577D3790058974C /* FeedViewController.swift */; };
+		D2E0D2F92AA2381D009978C7 /* FeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D2F82AA2381D009978C7 /* FeedModels.swift */; };
+		D2E0D2FB2AA23915009978C7 /* FeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D2FA2AA23915009978C7 /* FeedAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +75,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6E629EE024ACB475006BE5A8 /* UIAlertController+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Error.swift"; sourceTree = "<group>"; };
 		6E6841402490C68100789E41 /* Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6841432490C68100789E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E68414C2490C68200789E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,9 +88,10 @@
 		87B60E1B2576880D0058974C /* VintedUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VintedUI.xcodeproj; path = VintedUI/VintedUI.xcodeproj; sourceTree = "<group>"; };
 		87B60FE92577D3790058974C /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		87B60FEA2577D3790058974C /* FeedUIBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedUIBuilder.swift; sourceTree = "<group>"; };
-		87B60FEB2577D3790058974C /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		87B60FEC2577D3790058974C /* FeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
 		87B60FED2577D3790058974C /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		D2E0D2F82AA2381D009978C7 /* FeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModels.swift; sourceTree = "<group>"; };
+		D2E0D2FA2AA23915009978C7 /* FeedAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,6 @@
 		6E629EDF24ACB429006BE5A8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				6E629EE024ACB475006BE5A8 /* UIAlertController+Error.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -147,7 +146,7 @@
 		6E6841422490C68100789E41 /* VintedHW */ = {
 			isa = PBXGroup;
 			children = (
-				87B60FD32577D22C0058974C /* ViewControllers */,
+				87B60FD32577D22C0058974C /* Scenes */,
 				6E629EDF24ACB429006BE5A8 /* Helpers */,
 				6E983B27249218D900B0EBB9 /* Actions */,
 				6E6841432490C68100789E41 /* AppDelegate.swift */,
@@ -190,12 +189,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		87B60FD32577D22C0058974C /* ViewControllers */ = {
+		87B60FD32577D22C0058974C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				87B60FE82577D3790058974C /* FeedViewController */,
+				87B60FE82577D3790058974C /* Feed */,
 			);
-			path = ViewControllers;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		87B60FE42577D3480058974C /* Recovered References */ = {
@@ -205,16 +204,17 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		87B60FE82577D3790058974C /* FeedViewController */ = {
+		87B60FE82577D3790058974C /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				87B60FE92577D3790058974C /* FeedPresenter.swift */,
-				87B60FEA2577D3790058974C /* FeedUIBuilder.swift */,
-				87B60FEB2577D3790058974C /* FeedViewController.xib */,
-				87B60FEC2577D3790058974C /* FeedInteractor.swift */,
 				87B60FED2577D3790058974C /* FeedViewController.swift */,
+				87B60FEC2577D3790058974C /* FeedInteractor.swift */,
+				87B60FE92577D3790058974C /* FeedPresenter.swift */,
+				D2E0D2FA2AA23915009978C7 /* FeedAssembly.swift */,
+				D2E0D2F82AA2381D009978C7 /* FeedModels.swift */,
+				87B60FEA2577D3790058974C /* FeedUIBuilder.swift */,
 			);
-			path = FeedViewController;
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		ED59380908E83F2F83E145CC /* Frameworks */ = {
@@ -337,7 +337,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E6841502490C68200789E41 /* LaunchScreen.storyboard in Resources */,
-				87B60FF02577D3790058974C /* FeedViewController.xib in Resources */,
 				6E68414D2490C68200789E41 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,10 +358,11 @@
 				6EF90E852493BE170007EB1C /* AppRouter.swift in Sources */,
 				87B60FEE2577D3790058974C /* FeedPresenter.swift in Sources */,
 				87B60FEF2577D3790058974C /* FeedUIBuilder.swift in Sources */,
+				D2E0D2F92AA2381D009978C7 /* FeedModels.swift in Sources */,
 				6E6841442490C68100789E41 /* AppDelegate.swift in Sources */,
 				87B60FF12577D3790058974C /* FeedInteractor.swift in Sources */,
+				D2E0D2FB2AA23915009978C7 /* FeedAssembly.swift in Sources */,
 				87B60FF22577D3790058974C /* FeedViewController.swift in Sources */,
-				6E629EE124ACB475006BE5A8 /* UIAlertController+Error.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

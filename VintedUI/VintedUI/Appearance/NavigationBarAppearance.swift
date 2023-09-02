@@ -32,6 +32,7 @@ public final class NavigationBarAppearance: NSObject {
         
         if #available(iOS 13.0, *) {
             appearance.standardAppearance = navigationBarStandardAppearance(with: appearance)
+            appearance.scrollEdgeAppearance = navigationBarStandardAppearance(with: appearance)
         } else {
             buttonItemAppearance.apply()
         }

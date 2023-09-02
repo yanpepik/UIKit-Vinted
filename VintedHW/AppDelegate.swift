@@ -14,7 +14,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 }
-
-func __(_ translationKey: String) -> String {
-    return translationKey
-}
